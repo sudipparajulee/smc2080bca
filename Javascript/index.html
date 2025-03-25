@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="myheading"></h3>
+    <button onclick="myFunction()">Click Here</button>
+    <script>
+        document.write('<h3> Hello World </h3>');
+        // alert('Welcome to Javascript');
+        document.getElementById('myheading').innerHTML = 'Hello Javascript';
+        console.log('Hello Javascript');
+        function myFunction()
+        {
+            let x = 10;
+            let y = 20.5;
+            let sum = x + y;
+            let result = "The sum is " + sum;
+            alert(result);
+        }
+    </script>
+    
+</body>
+</html>
