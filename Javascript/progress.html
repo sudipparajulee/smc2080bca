@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-1/2 mt-5 ml-5 text-center bg-gray-200 rounded-lg border">
+        <div class="bg-red-600 rounded-lg p-2 text-white" style="width: 50%;" id="progress">50%</div>
+    </div>
+
+    <script>
+        let count = 0;
+        let total = 50;
+        function progress()
+        {
+            count ++;
+            document.getElementById('progress').innerHTML = count + '%';
+            document.getElementById('progress').style.width = count + '%';
+            if(count >= total)
+            {
+                clearInterval(start);
+            }
+        }
+
+        let start = setInterval(progress,100);
+    </script>
+</body>
+</html>
